@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressRing.Forms.Plugin", "ProgressRing.Forms.Plugin\ProgressRing.Forms.Plugin.csproj", "{26CFF98B-56A6-4BDF-A231-CC5E8553F2F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressRing.Forms.Plugin.iOS", "ProgressRing.Forms.Plugin.iOS\ProgressRing.Forms.Plugin.iOS.csproj", "{3FC55525-BE91-40F1-97E5-EBF1CC2F7C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressRing.Forms.Plugin.Android", "ProgressRing.Forms.Plugin.Android\ProgressRing.Forms.Plugin.Android.csproj", "{48702F21-AAC8-459F-A370-25BDCBF760BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26CFF98B-56A6-4BDF-A231-CC5E8553F2F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CFF98B-56A6-4BDF-A231-CC5E8553F2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CFF98B-56A6-4BDF-A231-CC5E8553F2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CFF98B-56A6-4BDF-A231-CC5E8553F2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC55525-BE91-40F1-97E5-EBF1CC2F7C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC55525-BE91-40F1-97E5-EBF1CC2F7C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC55525-BE91-40F1-97E5-EBF1CC2F7C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC55525-BE91-40F1-97E5-EBF1CC2F7C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48702F21-AAC8-459F-A370-25BDCBF760BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48702F21-AAC8-459F-A370-25BDCBF760BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48702F21-AAC8-459F-A370-25BDCBF760BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48702F21-AAC8-459F-A370-25BDCBF760BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
