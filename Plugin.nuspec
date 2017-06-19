@@ -27,22 +27,22 @@
    </metadata>
    <files>
       <!--Core-->
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.dll" target="lib\portable-net45+wp80+win8+wpa81\ProgressRing.Forms.Plugin.dll" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.xml" target="lib\portable-net45+wp80+win8+wpa81\ProgressRing.Forms.Plugin.xml" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.pdb" target="lib\portable-net45+wp80+win8+wpa81\ProgressRing.Forms.Plugin.pdb" />
+     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.dll" target="lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.dll" />
+     <!-- <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.xml" target="lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.xml" />
+     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.pdb" target="lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.pdb" /> -->
 
        <!--Xamarin.Android-->
-     <file src="src\ProgressRing.Forms.Plugin.Android\bin\Release\ProgressRing.Forms.Plugin.Android.dll" target="lib\MonoAndroid10\ProgressRing.Forms.Plugin.Android.dll" />
-     <file src="src\ProgressRing.Forms.Plugin.Android\bin\Release\ProgressRing.Forms.Plugin.Android.xml" target="lib\MonoAndroid10\ProgressRing.Forms.Plugin.Android.xml" />
-     <file src="src\ProgressRing.Forms.Plugin.Android\bin\Release\ProgressRing.Forms.Plugin.Android.pdb" target="lib\MonoAndroid10\ProgressRing.Forms.Plugin.Android.pdb" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.dll" target="lib\MonoAndroid10\ProgressRing.Forms.Plugin.dll" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.xml" target="lib\MonoAndroid10\ProgressRing.Forms.Plugin.xml" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.pdb" target="lib\MonoAndroid10\ProgressRing.Forms.Plugin.pdb" />
+     <file src="src/ProgressRing.Forms.Plugin.Android/bin/Release/ProgressRing.Forms.Plugin.Android.dll" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.Android.dll" />
+     <!-- <file src="src/ProgressRing.Forms.Plugin.Android/bin/Release/ProgressRing.Forms.Plugin.Android.xml" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.Android.xml" />
+     <file src="src/ProgressRing.Forms.Plugin.Android/bin/Release/ProgressRing.Forms.Plugin.Android.pdb" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.Android.pdb" /> -->
+     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.dll" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.dll" />
+     <!-- <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.xml" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.xml" />
+     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.pdb" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.pdb" /> -->
 
      <!--Xamarin.iOS-->
-     <file src="src\ProgressRing.Forms.Plugin.iOS\bin\iPhone\Release\ProgressRing.Forms.Plugin.iOS.dll" target="lib\Xamarin.iOS10\ProgressRing.Forms.Plugin.iOS.dll" />
-     <file src="src\ProgressRing.Forms.Plugin.iOS\bin\iPhone\Release\ProgressRing.Forms.Plugin.iOS.xml" target="lib\Xamarin.iOS10\ProgressRing.Forms.Plugin.iOS.xml" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.dll" target="lib\Xamarin.iOS10\ProgressRing.Forms.Plugin.dll" />
-     <file src="src\ProgressRing.Forms.Plugin\bin\Release\ProgressRing.Forms.Plugin.xml" target="lib\Xamarin.iOS10\ProgressRing.Forms.Plugin.xml" />
+     <file src="src/ProgressRing.Forms.Plugin.iOS/bin/Release/ProgressRing.Forms.Plugin.iOS.dll" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.dll" />
+     <!-- <file src="src/ProgressRing.Forms.Plugin.iOS/bin/Release/ProgressRing.Forms.Plugin.iOS.xml" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.xml" /> -->
+     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.dll" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.dll" />
+     <!-- <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.xml" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.xml" /> -->
    </files>
 </package>
