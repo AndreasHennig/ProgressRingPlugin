@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Xam.Plugins.Forms.ProgressRing</id>
-       <version>0.1</version>
+       <version>0.1.1</version>
        <title>Progress Ring Control Plugin for Xamarin.Forms</title>
        <authors>Andreas Hennig</authors>
        <owners>Andreas Hennig</owners>
@@ -18,6 +18,7 @@
          Built against: 2.3.4.247
        </description>
        <summary></summary>
+       <releaseNotes>- fixed bug where the control wasn't rendered properly under iOS</releaseNotes>
        <tags>xamarin, pcl, xam.pcl, android, xamarin.forms, ios, progress, circle, ring, bar, progress-bar</tags>
        <dependencies>
          <dependency id="Xamarin.Forms" version="2.3.4.247" />
