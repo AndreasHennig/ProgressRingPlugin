@@ -23,8 +23,6 @@
        <dependencies>
          <dependency id="Xamarin.Forms" version="2.3.4.247" />
        </dependencies>
-     <releaseNotes>
-     </releaseNotes>
    </metadata>
    <files>
       <!--Core-->
