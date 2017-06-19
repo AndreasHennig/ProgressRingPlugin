@@ -1,5 +1,6 @@
 ﻿using System;
 using CoreGraphics;
+using Foundation;
 using ProgressRingControl.Forms.Plugin;
 using ProgressRingControl.Forms.Plugin.iOS;
 using UIKit;
@@ -9,10 +10,19 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: ExportRenderer(typeof(ProgressRing), typeof(ProgressRingRenderer))]
 namespace ProgressRingControl.Forms.Plugin.iOS
 {
+    [Preserve(AllMembers = true)]
     public class ProgressRingRenderer : ViewRenderer
     {
         float? _radius;
         bool _sizeChanged = false;
+
+        /// <summary>
+        /// Necessary to register this class with the Xamarin.Forms with dependency service
+        /// </summary>
+		public async static void Init()
+		{
+			var temp = DateTime.Now;
+		}
 
         private nfloat GetRadius(nfloat lineWidth) {
             if (_radius == null || _sizeChanged)
@@ -28,8 +38,6 @@ namespace ProgressRingControl.Forms.Plugin.iOS
 
             return _radius.Value;
         }
-
-        // https://stackoverflow.com/questions/31693428/drawing-circles-in-xamarin-ios-xamarin-monotouch-for-showing-progress-graphica
 
         public override void Draw(CGRect rect)
         {
