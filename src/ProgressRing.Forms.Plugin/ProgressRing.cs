@@ -7,6 +7,7 @@ namespace ProgressRingControl.Forms.Plugin
     // DONE: Add Animation easing property (for binding) + use in AnimatedProgress
     // DONE: Add animation time property (for binding) + use in AnimatedProgress
     // TODO: Add circle fill
+    // TODO: Switch to .NET Standard
 
     public class ProgressRing : ProgressBar
     {
