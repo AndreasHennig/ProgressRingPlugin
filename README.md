@@ -5,6 +5,8 @@
 * Adjustable ring thickness
 * supports ProgressTo animation similar to the ones that come with the standard Xamarin.Forms ProgressBar
 
+![Progress Ring Animated Demo](https://raw.githubusercontent.com/AndreasHennig/ProgressRingPlugin/master/images/ProgressRingAnimatedDemo.gif)
+
 ## Setup
 
 * Available on NuGet: https://www.nuget.org/packages/Xam.Plugins.Forms.ProgressRing [![NuGet](https://img.shields.io/nuget/v/Xam.Plugins.Forms.ProgressRing.svg?label=NuGet)](https://www.nuget.org/packages/Xam.Plugins.Forms.ProgressRing/)
