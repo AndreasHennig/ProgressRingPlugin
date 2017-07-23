@@ -4,5 +4,5 @@
     xmlns:local="clr-namespace:TestProgressRing"
     xmlns:progressring="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
     x:Class="TestProgressRing.TestProgressRingPage">
-	<progressring:ProgressRing RingThickness="30" AnimationLength="10000" AnimatedProgress="1" />
+	<progressring:ProgressRing RingThickness="30" AnimationEasing="6" AnimationLength="4000" AnimatedProgress="0.75" />
 </ContentPage>

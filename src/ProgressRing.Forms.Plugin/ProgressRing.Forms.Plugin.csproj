@@ -9,7 +9,6 @@
     <RootNamespace>ProgressRingControl.Forms.Plugin</RootNamespace>
     <AssemblyName>ProgressRing.Forms.Plugin</AssemblyName>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-    <ReleaseVersion>0.1.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +28,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProgressRing.cs" />
+    <Compile Include="ProgressRingUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
