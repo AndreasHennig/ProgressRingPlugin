@@ -4,8 +4,8 @@ namespace ProgressRingControl.Forms.Plugin
 {
     // Version 0.2: 
 	// TODO: Add validation method for progress values
-	// TODO: Add Animation easing property (for binding) + use in AnimatedProgress
-	// TODO: Add animation time property (for binding) + use in AnimatedProgress
+	// DONE: Add Animation easing property (for binding) + use in AnimatedProgress
+	// DONE: Add animation time property (for binding) + use in AnimatedProgress
 	// TODO: Add circle fill
 
 	public class ProgressRing : ProgressBar
@@ -24,8 +24,23 @@ namespace ProgressRingControl.Forms.Plugin
                 base.SetValue(AnimatedProgressProperty, value);
 
                 ViewExtensions.CancelAnimations(this);
-                ProgressTo(value, 800, Easing.SinOut);
+                ProgressTo(value, AnimationLength, AnimationEasing);
             }
+        }
+
+        public static readonly BindableProperty AnimationLengthProperty = BindableProperty.Create("AnimationLength", typeof(uint),
+                                                                                                  typeof(ProgressRing), 800);
+        public uint AnimationLength {
+            get { return (uint)base.GetValue(AnimationLengthProperty); }
+            set { base.SetValue(AnimationLengthProperty, value); } 
+        }
+
+        public static readonly BindableProperty AnimationEasingProperty = BindableProperty.Create("AnimationEasing", typeof(Easing),
+                                                                                                  typeof(ProgressRing), Easing.Linear);
+
+        public Easing AnimationEasing { 
+            get { return (Easing)base.GetValue(AnimationEasingProperty); }
+            set { base.SetValue(AnimationEasingProperty, value); }
         }
 
         public static readonly BindableProperty RingProgressColorProperty = BindableProperty.Create("RingProgressColor", typeof(Color),
