@@ -8,8 +8,6 @@ namespace TestProgressRing
         public TestProgressRingPage()
         {
             InitializeComponent();
-
-            Content = new ProgressRing();
         }
     }
 }

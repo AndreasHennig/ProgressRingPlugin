@@ -7,7 +7,7 @@ namespace ProgressRingControl.Forms.Plugin
     // DONE: Add Animation easing property (for binding) + use in AnimatedProgress
     // DONE: Add animation time property (for binding) + use in AnimatedProgress
     // TODO: Add circle fill
-    // TODO: Switch to .NET Standard
+    // DONE: Switch to .NET Standard
 
     public class ProgressRing : ProgressBar
     {
@@ -20,7 +20,7 @@ namespace ProgressRingControl.Forms.Plugin
         /// </summary>
         public static readonly BindableProperty AnimatedProgressProperty = BindableProperty.Create("AnimatedProgress", typeof(double),
                                                                                                    typeof(ProgressRing), 0.5,
-                                                                                                   propertyChanged: HandleAnimatedProgressBindablePropertyChanged);
+                                                                                                   propertyChanged: HandleAnimatedProgressChanged);
         public double AnimatedProgress
         {
             get { return (double)base.GetValue(AnimatedProgressProperty); }
@@ -29,6 +29,8 @@ namespace ProgressRingControl.Forms.Plugin
                 base.SetValue(AnimatedProgressProperty, value);
 
                 ViewExtensions.CancelAnimations(this);
+                var length = base.GetValue(AnimationLengthProperty);
+
                 ProgressTo(value, AnimationLength, AnimationEasing);
             }
         }
@@ -38,7 +40,8 @@ namespace ProgressRingControl.Forms.Plugin
         /// property to animate to a certain progress.
         /// </summary>
         public static readonly BindableProperty AnimationLengthProperty = BindableProperty.Create("AnimationLength", typeof(uint),
-                                                                                                  typeof(ProgressRing), 800);
+                                                                                                  typeof(ProgressRing), (uint)800, 
+                                                                                                  propertyChanged: HandleAnimationLengthChanged);
         public uint AnimationLength {
             get { return (uint)base.GetValue(AnimationLengthProperty); }
             set { base.SetValue(AnimationLengthProperty, value); } 
@@ -94,10 +97,16 @@ namespace ProgressRingControl.Forms.Plugin
 
         #endregion
 
-        static void HandleAnimatedProgressBindablePropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        static void HandleAnimatedProgressChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var progress = (ProgressRing)bindable;
             progress.AnimatedProgress = (double)newValue;
+        }
+
+        static void HandleAnimationLengthChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var progress = (ProgressRing)bindable;
+            progress.AnimationLength = (uint) newValue;
         }
     }
 }
