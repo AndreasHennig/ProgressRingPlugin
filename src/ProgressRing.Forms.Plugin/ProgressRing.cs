@@ -8,10 +8,10 @@ namespace ProgressRingControl.Forms.Plugin
     // DONE: Add animation time property (for binding) + use in AnimatedProgress
     // DONE: Fix Length property order thingy bug
     // DONE: Add Easing Property for xaml
+	// DONE: Switch pcl to netstandard
     // TODO: Write documentation for xaml easing method thing
     // TODO: Write FAQ
     // TODO: Add circle fill
-    // DONE: Switch pcl to netstandard
 
     public class ProgressRing : ProgressBar
     {
