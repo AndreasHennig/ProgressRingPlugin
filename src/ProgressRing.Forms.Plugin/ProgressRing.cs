@@ -2,13 +2,7 @@
 
 namespace ProgressRingControl.Forms.Plugin
 {
-    // Version 0.2: 
-    // DONE: AnimatedProgress / Progress: Test if value coerce is necessary (not necessary)
-    // DONE: Add Animation easing property (for binding) + use in AnimatedProgress
-    // DONE: Add animation time property (for binding) + use in AnimatedProgress
-    // DONE: Fix Length property order thingy bug
-    // DONE: Add Easing Property for xaml
-	// DONE: Switch pcl to netstandard
+    // Version 0.1.2:
     // TODO: Write documentation for xaml easing method thing
     // TODO: Write FAQ
     // TODO: Add circle fill

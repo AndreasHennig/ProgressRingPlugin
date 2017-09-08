@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Xam.Plugins.Forms.ProgressRing</id>
-       <version>0.1.1</version>
+       <version>0.1.2</version>
        <title>Progress Ring Control Plugin for Xamarin.Forms</title>
        <authors>Andreas Hennig</authors>
        <owners>Andreas Hennig</owners>
@@ -15,10 +15,15 @@
          Colors are adjustable. It also supports "progress to" animations
          similar to the ones that come with the Xamarin.Forms progress bar.
 
-         Built against: 2.3.4.247
+         Built against: 2.3.4.270
        </description>
        <summary></summary>
-       <releaseNotes>- fixed bug where the control wasn't rendered properly under iOS</releaseNotes>
+       <releaseNotes>
+         - Switched PCL project to .netstandard
+         - added animation easing property (for binding)
+         - added animation time property (for binding)
+         - added easing property for use in xaml
+       </releaseNotes>
        <tags>xamarin, pcl, xam.pcl, android, xamarin.forms, ios, progress, circle, ring, bar, progress-bar</tags>
        <dependencies>
          <dependency id="Xamarin.Forms" version="2.3.4.247" />
@@ -27,21 +32,13 @@
    <files>
       <!--Core-->
      <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.dll" target="lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.dll" />
-     <!-- <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.xml" target="lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.xml" />
-     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.pdb" target="lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.pdb" /> -->
 
        <!--Xamarin.Android-->
      <file src="src/ProgressRing.Forms.Plugin.Android/bin/Release/ProgressRing.Forms.Plugin.Android.dll" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.Android.dll" />
-     <!-- <file src="src/ProgressRing.Forms.Plugin.Android/bin/Release/ProgressRing.Forms.Plugin.Android.xml" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.Android.xml" />
-     <file src="src/ProgressRing.Forms.Plugin.Android/bin/Release/ProgressRing.Forms.Plugin.Android.pdb" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.Android.pdb" /> -->
      <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.dll" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.dll" />
-     <!-- <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.xml" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.xml" />
-     <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.pdb" target="lib/MonoAndroid10/ProgressRing.Forms.Plugin.pdb" /> -->
 
      <!--Xamarin.iOS-->
      <file src="src/ProgressRing.Forms.Plugin.iOS/bin/Release/ProgressRing.Forms.Plugin.iOS.dll" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.dll" />
-     <!-- <file src="src/ProgressRing.Forms.Plugin.iOS/bin/Release/ProgressRing.Forms.Plugin.iOS.xml" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.xml" /> -->
      <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.dll" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.dll" />
-     <!-- <file src="src/ProgressRing.Forms.Plugin/bin/Release/ProgressRing.Forms.Plugin.xml" target="lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.xml" /> -->
    </files>
 </package>
