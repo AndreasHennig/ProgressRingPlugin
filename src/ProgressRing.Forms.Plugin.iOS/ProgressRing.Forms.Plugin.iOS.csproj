@@ -9,6 +9,7 @@
     <RootNamespace>ProgressRingControl.Forms.Plugin.iOS</RootNamespace>
     <AssemblyName>ProgressRing.Forms.Plugin.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>0.1.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
