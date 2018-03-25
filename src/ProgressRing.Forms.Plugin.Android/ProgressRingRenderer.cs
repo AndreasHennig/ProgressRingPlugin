@@ -1,4 +1,5 @@
 ﻿using System;
+using Android.Content;
 using Android.Graphics;
 using Android.OS;
 using ProgressRingControl.Forms.Plugin;
@@ -16,14 +17,14 @@ namespace ProgressRingControl.Forms.Plugin.Android
         private RectF _ringDrawArea;
         private bool _sizeChanged = false;
 
-        public ProgressRingRenderer()
+        public ProgressRingRenderer(Context context) : base(context)
         {
             SetWillNotDraw(false);
         }
 
-        bool IsApi19()
+        bool IsLowerThanApi19()
         {
-            return ((int)Build.VERSION.SdkInt) == 19;
+            return ((int)Build.VERSION.SdkInt) <= 19;
         }
 
         protected override void OnDraw(Canvas canvas)
@@ -40,7 +41,7 @@ namespace ProgressRingControl.Forms.Plugin.Android
                 _paint.Flags = PaintFlags.AntiAlias;
             }
 
-            if (_ringDrawArea == null || _sizeChanged || IsApi19())
+            if (_ringDrawArea == null || _sizeChanged || IsLowerThanApi19())
             {
                 _sizeChanged = false;
 
@@ -53,7 +54,7 @@ namespace ProgressRingControl.Forms.Plugin.Android
                 var top = centerY - ringDiameter / 2;
 
                 _ringDrawArea = new RectF(left, top, left + ringDiameter, top + ringDiameter);
-                if (IsApi19())
+                if (IsLowerThanApi19())
                     canvas.ClipRect(new RectF(0, 0, canvas.Width, canvas.Height), Region.Op.Replace);
             }
 
