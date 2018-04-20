@@ -11,7 +11,7 @@ namespace ProgressRingControl.Forms.Plugin.Android
 {
     public class ProgressRingRenderer : ViewRenderer
     {
-        private  Paint _paint;
+        private Paint _paint;
         private RectF _ringDrawArea;
         private bool _sizeChanged = false;
 

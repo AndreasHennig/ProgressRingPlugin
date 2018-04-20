@@ -10,7 +10,7 @@ namespace ProgressRingControl.Forms.Plugin
         /// Dirty little function that converts a Xamarin.Forms static easing function 
         /// to a corresponding int value how it's supposed to be set in the AnimationEasing property in XAML.
         /// </summary>
-        /// <returns>The method to int.</returns>
+        /// <returns>The corresponding int value to an easing function.</returns>
         /// <param name="easingMethod">Easing method.</param>
         public static int EasingMethodToInt(Easing easingMethod) {
             int easingMethodInt;

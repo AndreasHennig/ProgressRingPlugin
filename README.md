@@ -54,7 +54,7 @@ So all together your xaml file could look something like this:
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
-    x:Class="TestProgressRing.TestProgressRingPage">
+    x:Class="YourNamespace.YourClassName">
 	<control:ProgressRing RingThickness="20" Progress="0.5"/>
 </ContentPage>
 
