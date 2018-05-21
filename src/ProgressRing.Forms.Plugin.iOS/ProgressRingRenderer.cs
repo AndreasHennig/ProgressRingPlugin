@@ -19,7 +19,7 @@ namespace ProgressRingControl.Forms.Plugin.iOS
         /// <summary>
         /// Necessary to register this class with the Xamarin.Forms with dependency service
         /// </summary>
-		public async static void Init()
+		public static void Init()
 		{
 			var temp = DateTime.Now;
 		}
